@@ -1,7 +1,12 @@
 import { createStore } from "redux"
 
 const initialState = {
-  greetings: []
+  greetings: [
+    {
+      name: "test",
+      guid: "123"
+    }
+  ]
 };
 
 function rootReducer(state, action) {
