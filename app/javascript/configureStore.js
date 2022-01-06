@@ -3,12 +3,7 @@ import { createStore, applyMiddleware } from "redux"
 import thunk from 'redux-thunk'
 
 const initialState = {
-  greetings: [
-    {
-      name: "test",
-      guid: "123"
-    }
-  ]
+  greetings: []
 };
 
 function rootReducer(state, action) {

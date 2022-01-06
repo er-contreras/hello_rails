@@ -2,9 +2,13 @@ class V1::GreetingsController < ApplicationController
   def index
     render json: { :greetings => [
       {
-        :name => 'some-thing',
-        :guid => '0415674d-a0e8-4748-af68-a5f53a05c453'
+        :greeting => 'Hello Sire',
+      },
+      {
+        :greeting => 'Greetings sire'
       }
     ] }.to_json
+
+    # render json: Greeting.all.sample, only: [:greeting]
   end
 end

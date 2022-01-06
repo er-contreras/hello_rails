@@ -1,5 +1,4 @@
 import React from "react"
-// import PropTypes from "prop-types"
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
@@ -28,8 +27,10 @@ class HelloWorld extends React.Component {
   render () {
     const { greetings } = this.props;
     const greetingsList = greetings.map((greeting) => {
-      return <li>{greeting.name} {greeting.guid}</li>
+      return <li>{greeting.greeting}</li>
     })
+    // const greetingsList = greetings
+    // console.log(greetingsList)
   
     return (
       <React.Fragment>
@@ -37,7 +38,9 @@ class HelloWorld extends React.Component {
 
         <button className="getGreetingsBtn" onClick={() => this.props.getGreetings()}>getGreetings</button>
         <br />
-        <ul>{ greetingsList }</ul>
+        {/* <p>h</p> */}
+        {/* <div>{ greetingsList }</div> */}
+        <p>{ greetingsList }</p>
       </React.Fragment>
     );
   }
