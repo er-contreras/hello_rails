@@ -28,12 +28,14 @@ function HelloWorld(props) {
 
   return (
     <React.Fragment>
-      Greeting: { props.greeting_from_app}
+      <div className="getGreetings">
+        Greetings: { props.greeting_from_app}
 
-      <button className="getGreetingsBtn" onClick={() => props.getGreetings()}>getGreetings</button>
-      <br />
+        <button className="getGreetingsBtn" onClick={() => props.getGreetings()}>getGreetings</button>
+        <br />
 
-      <p>{ greetingsList }</p>
+        <p>{ greetingsList }</p>
+      </div>
     </React.Fragment>
   );
 }
