@@ -13,7 +13,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={("Home!")} />
-            <Route path="/hello" element={<HelloWorld greeting="Friend"/>} />
+            <Route path="/hello" element={<HelloWorld greeting_from_app="Friend" />} />
           </Routes>
         </BrowserRouter>
       </Provider>
